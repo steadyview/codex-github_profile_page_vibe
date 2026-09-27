@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="김개발의 개발자 포트폴리오" />
+    <meta name="theme-color" content="#07111f" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>김개발 · Frontend Developer</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="김개발 포트폴리오 첫 화면">
+        <span class="brand-mark">K.</span><span>kim.dev</span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">메뉴 열기</span><span></span><span></span>
+      </button>
+      <nav id="site-nav" aria-label="주요 탐색">
+        <a href="#about">소개</a>
+        <a href="#work">프로젝트</a>
+        <a href="#experience">경험</a>
+        <a href="#contact">연락처</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section-shell" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> OPEN TO WORK · SEOUL</p>
+          <h1 id="hero-title">좋은 경험을<br /><em>선명하게</em> 만듭니다.</h1>
+          <p class="hero-intro">사용자의 문제를 이해하고, 빠르고 오래가는 웹 인터페이스로 풀어내는 프론트엔드 개발자 <strong>김개발</strong>입니다.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#work">프로젝트 보기 <span aria-hidden="true">↘</span></a>
+            <a class="button ghost" href="mailto:hello@example.com">이메일 보내기</a>
+          </div>
+        </div>
+        <div class="terminal" aria-label="개발자 소개 코드">
+          <div class="terminal-bar"><span></span><span></span><span></span><p>profile.ts</p></div>
+          <pre><code><span class="code-key">const</span> developer = {
+  name: <span class="code-string">'김개발'</span>,
+  role: <span class="code-string">'Frontend Developer'</span>,
+  focus: [<span class="code-string">'UX'</span>, <span class="code-string">'Web Performance'</span>],
+  available: <span class="code-value">true</span>
+};</code></pre>
+          <div class="terminal-foot"><span>●</span> building thoughtful interfaces</div>
+        </div>
+      </section>
+
+      <section class="about section-shell" id="about" aria-labelledby="about-title">
+        <p class="section-label">01 / ABOUT</p>
+        <div class="section-content">
+          <h2 id="about-title">복잡한 것을<br />자연스럽게.</h2>
+          <div class="about-text">
+            <p>디자인과 개발 사이의 언어를 번역하며, 제품이 사용자에게 닿는 마지막 경험을 다듬습니다. 팀과 함께 빠르게 가설을 검증하고 작은 디테일까지 책임지는 방식을 좋아합니다.</p>
+            <p>현재는 접근성, 성능, 유지보수성을 놓치지 않는 인터페이스를 만드는 데 집중하고 있습니다.</p>
+          </div>
+        </div>
+        <ul class="stack" aria-label="주요 기술">
+          <li>TypeScript</li><li>React</li><li>Next.js</li><li>Node.js</li><li>Figma</li><li>Git</li>
+        </ul>
+      </section>
+
+      <section class="work section-shell" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <p class="section-label">02 / SELECTED WORK</p>
+          <h2 id="work-title">만든 것들</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project project-featured">
+            <div class="project-visual visual-a"><span>01</span><div class="fake-window"><i></i><i></i><i></i><b>pulse / analytics</b><div class="chart"><span></span><span></span><span></span><span></span><span></span><span></span></div></div></div>
+            <div class="project-info"><div><p class="project-type">WEB APPLICATION · 2024</p><h3>Pulse Analytics</h3><p>팀이 가장 중요한 제품 지표를 빠르게 읽을 수 있도록 만든 실시간 분석 대시보드입니다.</p></div><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+            <ul class="tags"><li>Next.js</li><li>TypeScript</li><li>Recharts</li></ul>
+          </article>
+          <article class="project">
+            <div class="project-visual visual-b"><span>02</span><div class="cursor-card"><small>새로운 습관</small><b>오늘도<br />기록하기</b><em>12:45</em></div></div>
+            <div class="project-info"><div><p class="project-type">MOBILE WEB · 2023</p><h3>Done, Today</h3><p>바쁜 일상 속에서 작은 성취를 쌓도록 돕는 습관 기록 서비스입니다.</p></div><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+            <ul class="tags"><li>React</li><li>Firebase</li><li>PWA</li></ul>
+          </article>
+          <article class="project">
+            <div class="project-visual visual-c"><span>03</span><div class="type-specimen">Aa<br /><b>모아</b><small>design system</small></div></div>
+            <div class="project-info"><div><p class="project-type">DESIGN SYSTEM · 2023</p><h3>Moa UI</h3><p>제품팀의 일관된 화면 제작을 위해 구축한 재사용 가능한 컴포넌트 시스템입니다.</p></div><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+            <ul class="tags"><li>React</li><li>Storybook</li><li>CSS</li></ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="experience section-shell" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading"><p class="section-label">03 / EXPERIENCE</p><h2 id="experience-title">함께한 시간</h2></div>
+        <ol class="timeline">
+          <li><p>2023 — 현재</p><div><h3>Studio Wave <span>· Frontend Developer</span></h3><p>제품의 핵심 웹 경험을 개발하고 디자인 시스템을 운영합니다.</p></div></li>
+          <li><p>2021 — 2023</p><div><h3>Product Lab <span>· Web Developer</span></h3><p>B2B SaaS 서비스의 프론트엔드 아키텍처와 운영 환경을 개선했습니다.</p></div></li>
+          <li><p>2017 — 2021</p><div><h3>OO대학교 <span>· 컴퓨터공학</span></h3><p>사용자 중심의 소프트웨어를 공부하고 여러 팀 프로젝트를 경험했습니다.</p></div></li>
+        </ol>
+      </section>
+
+      <section class="contact section-shell" id="contact" aria-labelledby="contact-title">
+        <p class="section-label">04 / CONTACT</p>
+        <h2 id="contact-title">다음 장면을<br /><em>함께 만들까요?</em></h2>
+        <a class="contact-email" href="mailto:hello@example.com">hello@example.com <span aria-hidden="true">↗</span></a>
+        <div class="social-links"><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a><a href="#top">Back to top ↑</a></div>
+      </section>
+    </main>
+    <footer><p>© <span id="year"></span> KIM DEV. BUILT WITH CARE.</p><p>SEOUL, KOREA</p></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
