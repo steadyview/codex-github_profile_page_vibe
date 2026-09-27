@@ -10,6 +10,8 @@
     <title>김개발 · Frontend Developer</title>
   </head>
   <body>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
     <a class="skip-link" href="#main">본문으로 건너뛰기</a>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="김개발 포트폴리오 첫 화면">
@@ -36,6 +38,11 @@
             <a class="button primary" href="#work">프로젝트 보기 <span aria-hidden="true">↘</span></a>
             <a class="button ghost" href="mailto:hello@example.com">이메일 보내기</a>
           </div>
+          <dl class="hero-metrics" aria-label="핵심 역량">
+            <div><dt>03+</dt><dd>Years crafting web</dd></div>
+            <div><dt>12</dt><dd>Projects shipped</dd></div>
+            <div><dt>∞</dt><dd>Curiosity level</dd></div>
+          </dl>
         </div>
         <div class="terminal" aria-label="개발자 소개 코드">
           <div class="terminal-bar"><span></span><span></span><span></span><p>profile.ts</p></div>
@@ -45,11 +52,15 @@
   focus: [<span class="code-string">'UX'</span>, <span class="code-string">'Web Performance'</span>],
   available: <span class="code-value">true</span>
 };</code></pre>
-          <div class="terminal-foot"><span>●</span> building thoughtful interfaces</div>
+          <div class="terminal-foot"><span>●</span> building thoughtful interfaces <b>v.2025</b></div>
         </div>
       </section>
 
-      <section class="about section-shell" id="about" aria-labelledby="about-title">
+      <div class="signal-band" aria-hidden="true">
+        <div>DESIGN WITH INTENT <span>✦</span> BUILD WITH CARE <span>✦</span> SHIP WITH CONFIDENCE <span>✦</span> DESIGN WITH INTENT <span>✦</span> BUILD WITH CARE</div>
+      </div>
+
+      <section class="about section-shell reveal" id="about" aria-labelledby="about-title">
         <p class="section-label">01 / ABOUT</p>
         <div class="section-content">
           <h2 id="about-title">복잡한 것을<br />자연스럽게.</h2>
@@ -63,7 +74,7 @@
         </ul>
       </section>
 
-      <section class="work section-shell" id="work" aria-labelledby="work-title">
+      <section class="work section-shell reveal" id="work" aria-labelledby="work-title">
         <div class="section-heading">
           <p class="section-label">02 / SELECTED WORK</p>
           <h2 id="work-title">만든 것들</h2>
@@ -87,7 +98,7 @@
         </div>
       </section>
 
-      <section class="experience section-shell" id="experience" aria-labelledby="experience-title">
+      <section class="experience section-shell reveal" id="experience" aria-labelledby="experience-title">
         <div class="section-heading"><p class="section-label">03 / EXPERIENCE</p><h2 id="experience-title">함께한 시간</h2></div>
         <ol class="timeline">
           <li><p>2023 — 현재</p><div><h3>Studio Wave <span>· Frontend Developer</span></h3><p>제품의 핵심 웹 경험을 개발하고 디자인 시스템을 운영합니다.</p></div></li>
@@ -96,7 +107,7 @@
         </ol>
       </section>
 
-      <section class="contact section-shell" id="contact" aria-labelledby="contact-title">
+      <section class="contact section-shell reveal" id="contact" aria-labelledby="contact-title">
         <p class="section-label">04 / CONTACT</p>
         <h2 id="contact-title">다음 장면을<br /><em>함께 만들까요?</em></h2>
         <a class="contact-email" href="mailto:hello@example.com">hello@example.com <span aria-hidden="true">↗</span></a>
